@@ -31,6 +31,8 @@ public class Lf01 {
         printEventElementsFunctional(l);
         System.out.println();
         printSquareOfOddElements(l);
+        System.out.println();
+        printCubeDistinctOfElements(l);
 
 
     }
@@ -70,6 +72,16 @@ public class Lf01 {
     public static void printSquareOfOddElements(List<Integer> list){
         list.stream().filter(t-> t%2!=0).map(t-> t*t).forEach(t-> System.out.print(t+ " "));
 
+    }
+
+    //4)Create a method to print the cube of distinct odd list elements on the console in the same line
+    //  with a space between two consecutive elements.
+    // elements should be distinct (unique)
+    //elements should be odd
+    //elements should as cube
+
+    public static void printCubeDistinctOfElements(List<Integer> list){
+        list.stream().distinct().filter(t->t%2!=0).map(t->t*t*t).forEach(t-> System.out.print(t+ " "));
     }
 
 
