@@ -84,6 +84,8 @@ public class Lf01 {
         list.stream().distinct().filter(t->t%2!=0).map(t->t*t*t).forEach(t-> System.out.print(t+ " "));
     }
 
+    //7)Create a method to find the maximum value from the list elements
+
 
 
 }
