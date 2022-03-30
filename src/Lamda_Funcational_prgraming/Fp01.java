@@ -3,7 +3,7 @@ package Lamda_Funcational_prgraming;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Lf01 {
+public class Fp01 {
     /*
       lambda is a functional programming ,we have had lambda in java with version 8
       Functional programming focuses on"what to do" with structure programming we focus on "how to do"

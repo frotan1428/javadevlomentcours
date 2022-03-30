@@ -26,4 +26,19 @@ public class Utils {
         return x*x;
         //Utils::getSquare
     }
+
+    public static void printElementWithStar(Object o){
+        System.out.println(o+ " *");
+        //Utils::printElementWithStar
+
+    }
+
+    public static int getCube(int x){
+        return x*x*x;
+        //Utils::getCube
+    }
+
+    public static double getHalfOfElements(double x){
+        return x/2.0;
+    }
 }

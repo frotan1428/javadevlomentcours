@@ -1,12 +1,11 @@
 package Lamda_Funcational_prgraming;
 
-import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class LmF01 {
+public class Fp04 {
     public static void main(String[] args) {
 
         List<Integer> l = new ArrayList<Integer>();
@@ -27,6 +26,7 @@ public class LmF01 {
         halfOfDistinctElementReverseOrder(l);
         SumOfSquare(l);
         ProductOfCubeOfDistinctElements(l);
+
 
     }
     //7)Create a method to find the maximum value from the list elements
@@ -89,7 +89,7 @@ public class LmF01 {
     List<Double> list1=   list.stream().
                 distinct().
                 filter(t->t>5).
-                map(t->t/2.0).
+                map(Utils::getHalfOfElements).
                 sorted(Comparator.reverseOrder()).
                 collect(Collectors.toList());
         System.out.println(list1);

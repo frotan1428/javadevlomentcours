@@ -59,4 +59,8 @@ public class Fp02 {
         list.stream().filter(Utils::CheckToBeOdd).map(Utils::getSquare).forEach(Utils::printInSameLineWithSpace);
     }
 
+
+
+
+
 }
