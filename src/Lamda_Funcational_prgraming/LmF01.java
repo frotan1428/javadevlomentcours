@@ -1,5 +1,6 @@
 package Lamda_Funcational_prgraming;
 
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
@@ -24,6 +25,8 @@ public class LmF01 {
         getMinimumGreaterThan702(l);
         getMinimumGreaterThan703(l);
         halfOfDistinctElementReverseOrder(l);
+        SumOfSquare(l);
+        ProductOfCubeOfDistinctElements(l);
 
     }
     //7)Create a method to find the maximum value from the list elements
@@ -92,10 +95,18 @@ public class LmF01 {
         System.out.println(list1);
 
     }
+//5)Create a method to calculate the sum of the squares of distinct even elements
 
+    public static void SumOfSquare(List<Integer> list){
 
+       Integer sum= list.stream().distinct().filter(t-> t%2==0).map(t-> t*t).reduce(0,(t,u) -> t+u);
+        System.out.println(sum);
 
-
-
+    }
+    //6)Create a method to calculate the product of the cubes of distinct even elements
+    public static void ProductOfCubeOfDistinctElements(List<Integer> list){
+       Integer Product= list.stream().distinct().filter(t-> t%2==0).map(t-> t*t*t).reduce(1,(t,u)-> t*u);
+        System.out.println(Product);
+    }
 
 }
