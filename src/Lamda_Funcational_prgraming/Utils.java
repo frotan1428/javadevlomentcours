@@ -41,4 +41,9 @@ public class Utils {
     public static double getHalfOfElements(double x){
         return x/2.0;
     }
+
+    public static char getLastChar(String str){
+       return str.charAt(str.length()-1);
+    }
+
 }
